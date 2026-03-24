@@ -6,13 +6,13 @@ function App() {
   let [visible , setVisible] = useState(false)
 
   function show(){
-    setVisible(true)
+      setVisible(true)
   }
 
   return (
     <div id="main">
       <button id="click" onClick={show}>Click</button>
-      {visible? <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p> : <p></p>}
+      {visible && <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
 
     </div>
   );
